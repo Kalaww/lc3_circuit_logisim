@@ -1,0 +1,18 @@
+.ORIG x0000
+
+	AND R0,R0,0
+	AND R1,R1,0
+
+	ADD R0,R0,2	;R0 = 2
+	ADD R1,R1,-3	;R1 = -3
+	ADD R2,R1,R0	;R2 = R1 + R0
+
+	AND R3,R0,R1	;R3 = R0 & R1
+	AND R4,R0,3	;R4 = R0 & 3
+
+	XOR R5,R0,3	;R5 = R0 xor 3
+	XOR R6,R0,R1	;R6 = R0 xor R1	
+
+	NOT R5,R0	;R5 = not R0
+
+.END

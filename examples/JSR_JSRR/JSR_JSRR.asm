@@ -1,0 +1,20 @@
+.ORIG x0000
+
+	AND R0,R0,0
+	JSR fct1
+	ADD R0,R0,3
+	LEA R1,fct2
+	JSRR R1
+	ADD R0,R0,7
+	NOP
+	NOP
+	NOP
+	NOP
+
+fct1:	ADD R0,R0,1
+	RET
+
+fct2:	ADD R0,R0,5
+	RET
+
+.END
